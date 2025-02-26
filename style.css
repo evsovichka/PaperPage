@@ -22,6 +22,7 @@ h1 {
   font-family: "Nova Cut", sans-serif;
 }
 
+/* ----------Header--------- */
 .header {
   display: grid;
   grid-template-columns: 88px 1fr 88px;
@@ -52,4 +53,17 @@ h1 {
   height: 88px;
   border-radius: 100%;
   background-color: var(--black-25);
+}
+
+/* -------Layout-------- */
+
+.layout {
+  padding: 32px;
+  border-bottom: 1px solid var(--black-25);
+}
+.layout-title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 105%;
+  text-align: center;
 }
