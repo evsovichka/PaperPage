@@ -22,6 +22,30 @@ h1 {
   font-family: "Nova Cut", sans-serif;
 }
 
+.section {
+  padding: 32px 0;
+  display: grid;
+  border-bottom: 1px solid var(--black-25);
+}
+
+.title-author-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-content: start;
+}
+
+.author {
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--black-50);
+}
 /* ----------Header--------- */
 .header {
   display: grid;
@@ -71,16 +95,7 @@ h1 {
 /* -----first-section------- */
 
 .first-section {
-  padding: 32px 0;
-  display: grid;
   grid-template-columns: 576px 726px 426px;
-  gap: 24px;
-  border-bottom: 1px solid var(--black-25);
-}
-
-.section-article {
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 24px;
 }
 
@@ -92,11 +107,6 @@ h1 {
   width: 576px;
 }
 
-.title-author-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-}
 .first-section-article:first-child .title-author-wrapper {
   gap: 4px;
   height: 236px;
@@ -111,11 +121,6 @@ h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 117%;
-}
-
-.author-article {
-  font-size: 12px;
-  color: var(--black-50);
 }
 
 .text-article {
@@ -135,11 +140,8 @@ h1 {
 /* --------second section ------ */
 
 .second-section {
-  padding: 32px 0;
-  display: grid;
   grid-template-areas: "a b c ";
   gap: 12px;
-  border-bottom: 1px solid var(--black-25);
 }
 
 .second-section-article-first {
@@ -160,7 +162,7 @@ h1 {
   grid-area: c;
 }
 
-.second-section-article-title {
+.article-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 122%;
@@ -172,6 +174,90 @@ h1 {
   gap: 24px;
 }
 
-.second-section-article-text {
+.article-text {
   line-height: 129%;
+}
+
+/* --------third section-------- */
+
+.third-section {
+  display: grid;
+  padding-top: 32px;
+  column-gap: 12px;
+  grid-template-areas:
+    "e f g"
+    "e f h";
+}
+
+.third-section-first-article {
+  grid-area: e;
+  padding-right: 12px;
+  border-right: 1px solid var(--black-25);
+  max-width: 438px;
+}
+.third-section-image {
+  width: 426px;
+  height: 284px;
+  background-color: var(--black-25);
+}
+
+.third-section-second-article {
+  grid-area: f;
+  max-width: 288px;
+  padding-right: 12px;
+  border-right: 1px solid var(--black-25);
+}
+
+.third-section-third-article {
+  grid-area: g;
+  display: grid;
+  grid-template-columns: 276px 1fr;
+  gap: 24px;
+  padding-bottom: 32px;
+  /* max-height: 280px; */
+  border-bottom: 1px solid var(--black-25);
+}
+
+.third-section-third-article h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 167%;
+}
+
+.third-section-fourth-article {
+  padding-top: 32px;
+  grid-area: h;
+}
+
+/* ------table------ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid var(--black);
+  padding: 12px;
+  width: 121px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 133%;
+}
+th {
+  border: 1px solid var(--black);
+  padding: 12px;
+  width: 121px;
+  height: 48px;
+  background-color: var(--black);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--white);
+  text-align: start;
+}
+
+tr td:first-child {
+  background-color: var(--black-25);
 }
