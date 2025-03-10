@@ -137,17 +137,41 @@ h1 {
 .second-section {
   padding: 32px 0;
   display: grid;
-  grid-template-areas: "a b c c c c";
+  grid-template-areas: "a b c ";
+  gap: 12px;
+  border-bottom: 1px solid var(--black-25);
 }
 
 .second-section-article-first {
+  max-width: 288px;
   grid-area: a;
+  padding-right: 12px;
+  border-right: 1px solid var(--black-25);
 }
 
 .second-section-article-second {
   grid-area: b;
+  max-width: 288px;
+  padding-right: 12px;
+  border-right: 1px solid var(--black-25);
 }
 
 .second-section-article-third {
   grid-area: c;
+}
+
+.second-section-article-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 122%;
+}
+
+.second-section-text-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 24px;
+}
+
+.second-section-article-text {
+  line-height: 129%;
 }
