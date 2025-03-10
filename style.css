@@ -73,7 +73,7 @@ h1 {
 .first-section {
   padding: 32px 0;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: 576px 726px 426px;
   gap: 24px;
   border-bottom: 1px solid var(--black-25);
 }
@@ -84,16 +84,12 @@ h1 {
   gap: 24px;
 }
 
-.first-section-article:nth-child(even) {
+.image-article {
   gap: 12px;
 }
 
 .first-section-article:first-child {
   width: 576px;
-}
-.first-section-article:last-child .title-article {
-  font-size: 48px;
-  line-height: 117%;
 }
 
 .title-author-wrapper {
@@ -111,6 +107,12 @@ h1 {
   line-height: 112%;
 }
 
+.title-second-article {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 117%;
+}
+
 .author-article {
   font-size: 12px;
   color: var(--black-50);
@@ -118,6 +120,7 @@ h1 {
 
 .text-article {
   font-size: 18px;
+  line-height: 133%;
 }
 
 .background-for-img {
