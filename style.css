@@ -95,7 +95,7 @@ h1 {
 /* -----first-section------- */
 
 .first-section {
-  grid-template-columns: 576px 726px 426px;
+  grid-template-columns: repeat(3, auto);
   gap: 24px;
 }
 
@@ -103,8 +103,11 @@ h1 {
   gap: 12px;
 }
 
-.first-section-article:first-child {
-  width: 576px;
+.first-section .article:first-child {
+  max-width: 576px;
+}
+.first-section .article:last-child {
+  max-width: 426px;
 }
 
 .first-section-article:first-child .title-author-wrapper {
